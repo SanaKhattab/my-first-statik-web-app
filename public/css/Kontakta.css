@@ -1,0 +1,62 @@
+/* Samma som Home.css med eventuella justeringar */
+@import url("index.css");
+
+.about {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.kontakt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.kontakt-form input[type="submit"] {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.kontakt-form input[type="submit"]:hover {
+  background-color: #ff465e;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    margin: 50px 20px;
+    padding: 30px 20px;
+  }
+}

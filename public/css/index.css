@@ -1,0 +1,92 @@
+/* Grundstil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("../img/bilden.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Header och navigation */
+.header {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+}
+
+.logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.topnav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.topnav a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+/* Text och innehåll */
+section {
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Lätt genomskinlig bakgrund för texten */
+  margin-bottom: 30px;
+}
+
+section#home {
+  padding-top: 150px; /* Justering för att ge utrymme åt toppen om du vill */
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+}

@@ -1,0 +1,131 @@
+/* Samma som Home.css med eventuella justeringar */
+@import url("index.css");
+
+.about {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  color: white;
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#content-title {
+  font-size: 50px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  color: white;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: rgba(255, 70, 94, 0.2);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    max-height: none;
+    top: 0px;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+  }
+  .menu li {
+    float: left;
+  }
+  .menu a:hover {
+    color: #ff465e;
+  }
+
+  .hamb {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    max-height: none;
+    top: 0px;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+    display: inline;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu a:hover {
+    color: #ff465e;
+  }
+
+  .hamb {
+    display: none;
+  }
+
+  .topnav a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    color: red;
+    transition: 0.4s;
+  }
+
+  .topnav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 13px;
+    position: relative;
+  }
+
+  .topnav ul a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .topnav ul::after {
+    width: 0;
+    height: 3px;
+    content: "";
+    background: red;
+    display: block;
+    margin: auto;
+  }
+
+  .topnav ul :hover ::after {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    color: white;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,39 @@
+/* Samma som Home.css med eventuella justeringar */
+@import url("index.css");
+
+/* Mörk ruta med innehåll */
+.about {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Länkar för kategori */
+.pizza,
+.kebab,
+.sallad,
+.dryck {
+  font-weight: bold;
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 18px;
+}
